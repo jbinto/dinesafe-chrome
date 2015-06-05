@@ -7,10 +7,12 @@
 
   "homepage_url": "https://github.com/jbinto/dinesafe-chrome",
 
-  "browser_action": {
-    "default_icon": "homer.png",
-    "default_popup": "popup.html"
-  },
+  "content_scripts": [ {
+    "js": [ "contentScript.js" ],
+    "matches": [ "*://*.yelp.com/biz/*", "*://*.yelp.ca/biz/*" ],
+    "run_at": "document_end"
+  } ],
+  
   "permissions": [
     "activeTab",
     "https://ajax.googleapis.com/"
