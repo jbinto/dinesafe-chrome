@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dinesafe: Toronto Restaurant Health Inspections",
+  "description": "Adds health inspection info for Toronto restaurants to popular websites like Yelp.",
+  "version": "0.1",
+
+  "homepage_url": "https://github.com/jbinto/dinesafe-chrome",
+
+  "browser_action": {
+    "default_icon": "homer.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
