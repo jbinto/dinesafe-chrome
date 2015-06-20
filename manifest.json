@@ -9,7 +9,10 @@
 
   "content_scripts": [ {
     "js": [ "contentScript.js" ],
-    "matches": [ "*://*.yelp.com/biz/*", "*://*.yelp.ca/biz/*" ],
+    "matches": [ 
+      "*://*.yelp.com/biz/*", 
+      "*://*.yelp.ca/biz/*" 
+    ],
     "run_at": "document_end"
   } ],
   
